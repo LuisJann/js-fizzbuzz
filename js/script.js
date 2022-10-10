@@ -17,23 +17,26 @@
 
  const row = document.querySelector(".row");
  let i = ""
+ const userNumber = parseInt(prompt("Quanti numeri vuoi?"))
+ const fizz = parseInt(prompt("Chi è fizz?"))
+ const buzz = parseInt(prompt("Chi è buzz?"))
 
-for (let i = 1; i <= 100; i++) {
+for (let i = 1; i <= userNumber; i++) {
     
     let buzzfizz = ""
     let cell = ""
 
-     if (i % 3 === 0 && i % 5 === 0) {
+     if (i % fizz === 0 && i % buzz === 0) {
          buzzfizz = "buzzfizz";
          console.log(buzzfizz);
          cell = `<div class = "cell ${buzzfizz}">${buzzfizz} </div>`; 
          row.innerHTML += cell;    
-     } else if (i % 5 === 0) {
+     } else if (i % fizz === 0) {
          buzzfizz = "fizz";
          console.log(buzzfizz);
          cell = `<div class = "cell ${buzzfizz}" >${buzzfizz} </div>`; 
          row.innerHTML += cell;  
-     } else if (i % 3 === 0) {
+     } else if (i % buzz === 0) {
          buzzfizz = "buzz";
          console.log(buzzfizz);
          cell = `<div class = "cell ${buzzfizz}" >${buzzfizz} </div>`; 
