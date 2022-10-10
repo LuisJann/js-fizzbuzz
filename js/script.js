@@ -21,8 +21,6 @@
 for (let i = 1; i <= 100; i++) {
     
     let buzzfizz = ""
-    let fizz = ""
-    let buzz = ""
     let cell = ""
 
      if (i % 3 === 0 && i % 5 === 0) {
@@ -41,7 +39,7 @@ for (let i = 1; i <= 100; i++) {
          cell = `<div class = "cell ${buzzfizz}" >${buzzfizz} </div>`; 
          row.innerHTML += cell;
      } else {
-         buzzfizz = i
+         buzzfizz = i;
          console.log(buzzfizz);
          cell = `<div class = "cell" > ${buzzfizz} </div>`; 
          row.innerHTML += cell;
