@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    width: calc(100% / 5);
+    height: 100px;
+    margin: 10px;
+    background-color: lightcoral;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.buzz{
+    background-color: greenyellow;
+}
+
+.fizz{
+    background-color: yellow;
+}
+
+.buzzfizz{
+    background-color: lightblue;
+}
