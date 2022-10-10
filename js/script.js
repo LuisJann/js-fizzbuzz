@@ -19,31 +19,32 @@
  let i = ""
 
 for (let i = 1; i <= 100; i++) {
-    console.log(i);
-
+    
     let buzzfizz = ""
     let fizz = ""
     let buzz = ""
     let cell = ""
-    
+
      if (i % 3 === 0 && i % 5 === 0) {
          buzzfizz = "buzzfizz";
          console.log(buzzfizz);
          cell = `<div class = "cell ${buzzfizz}">${buzzfizz} </div>`; 
-         row.innerHTML += cell    
+         row.innerHTML += cell;    
      } else if (i % 5 === 0) {
          buzzfizz = "fizz";
          console.log(buzzfizz);
          cell = `<div class = "cell ${buzzfizz}" >${buzzfizz} </div>`; 
-         row.innerHTML += cell  
-     } else if (i % 3 == 0) {
+         row.innerHTML += cell;  
+     } else if (i % 3 === 0) {
          buzzfizz = "buzz";
          console.log(buzzfizz);
          cell = `<div class = "cell ${buzzfizz}" >${buzzfizz} </div>`; 
-         row.innerHTML += cell
-     } else 
-        cell = `<div class = "cell" > ${i} </div>`; 
-        row.innerHTML += cell
-
+         row.innerHTML += cell;
+     } else {
+         buzzfizz = i
+         console.log(buzzfizz);
+         cell = `<div class = "cell" > ${buzzfizz} </div>`; 
+         row.innerHTML += cell;
+     }
  }
 
