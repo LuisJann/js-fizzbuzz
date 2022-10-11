@@ -27,7 +27,7 @@ for (let i = 1; i <= userNumber; i++) {
     let cell = ""
 
      if (i % fizz === 0 && i % buzz === 0) {
-         buzzfizz = "buzzfizz";
+         buzzfizz = "fizzbuzz";
          console.log(buzzfizz);
          cell = `<div class = "cell ${buzzfizz}">${buzzfizz} </div>`; 
          row.innerHTML += cell;    

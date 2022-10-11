@@ -13,6 +13,7 @@
 .row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .cell {
@@ -35,6 +36,14 @@
     background-color: yellow;
 }
 
-.buzzfizz{
+.fizzbuzz{
     background-color: lightblue;
+}
+
+h1{
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
