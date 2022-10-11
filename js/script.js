@@ -29,20 +29,19 @@ for (let i = 1; i <= userNumber; i++) {
     let buzzfizz = ""
     let cell = ""
 
-     if (i % fizz === 0 && i % buzz === 0) {
-         buzzfizz = "fizzbuzz";
-         console.log(buzzfizz);
-  
-     } else if (i % fizz === 0) {
-         buzzfizz = "fizz";
-         console.log(buzzfizz);
-     } else if (i % buzz === 0) {
-         buzzfizz = "buzz";
-         console.log(buzzfizz);
-     } else {
-         buzzfizz = i;
-         console.log(buzzfizz);
-     }
+    if (i % fizz === 0 && i % buzz === 0) {
+        buzzfizz = "fizzbuzz";
+        console.log(buzzfizz);
+    } else if (i % fizz === 0) {
+        buzzfizz = "fizz";
+        console.log(buzzfizz);
+    } else if (i % buzz === 0) {
+        buzzfizz = "buzz";
+        console.log(buzzfizz);
+    } else {
+        buzzfizz = i;
+        console.log(buzzfizz);
+    }
     
 // OUTPUT
     cell = `<div class = "cell ${buzzfizz}" >${buzzfizz} </div>`; 
