@@ -15,12 +15,15 @@
  Applica stili differenti agli elementi aggiunti al DOM nel *BONUS 1*, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz.
  Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna. */
 
+
+// INPUT
  const row = document.querySelector(".row");
  let i = ""
  const userNumber = parseInt(prompt("Quanti numeri vuoi?"))
  const fizz = parseInt(prompt("Chi è fizz?"))
  const buzz = parseInt(prompt("Chi è buzz?"))
 
+// ELABORAZIONE
 for (let i = 1; i <= userNumber; i++) {
     
     let buzzfizz = ""
@@ -29,23 +32,20 @@ for (let i = 1; i <= userNumber; i++) {
      if (i % fizz === 0 && i % buzz === 0) {
          buzzfizz = "fizzbuzz";
          console.log(buzzfizz);
-         cell = `<div class = "cell ${buzzfizz}">${buzzfizz} </div>`; 
-         row.innerHTML += cell;    
+  
      } else if (i % fizz === 0) {
          buzzfizz = "fizz";
          console.log(buzzfizz);
-         cell = `<div class = "cell ${buzzfizz}" >${buzzfizz} </div>`; 
-         row.innerHTML += cell;  
      } else if (i % buzz === 0) {
          buzzfizz = "buzz";
          console.log(buzzfizz);
-         cell = `<div class = "cell ${buzzfizz}" >${buzzfizz} </div>`; 
-         row.innerHTML += cell;
      } else {
          buzzfizz = i;
          console.log(buzzfizz);
-         cell = `<div class = "cell" > ${buzzfizz} </div>`; 
-         row.innerHTML += cell;
      }
+    
+// OUTPUT
+    cell = `<div class = "cell ${buzzfizz}" >${buzzfizz} </div>`; 
+    row.innerHTML += cell;  
  }
 
